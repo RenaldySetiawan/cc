@@ -1,0 +1,38 @@
+# Wavefront .mtl file  -  created by SpaceDraw
+
+# File created: 20-04-06, 12:57
+
+newmtl Redmetal_seamless_texture
+Ns 48.0
+d 1.0
+Tr 0.0
+illum 2
+Ka 0.50189996 0.50189996 0.50189996 
+Kd 0.50189996 0.50189996 0.50189996 
+Ks 0.7098 0.7058 0.7019 
+Ke 0.0 0.0 0.0 
+map_Ka Redmetal_seamless_texture.jpeg
+map_Kd Redmetal_seamless_texture.jpeg
+
+newmtl GasClyinderTexture-01
+Ns 48.0
+d 1.0
+Tr 0.0
+illum 2
+Ka 0.50189996 0.50189996 0.50189996 
+Kd 0.50189996 0.50189996 0.50189996 
+Ks 0.7098 0.7098 0.7098 
+Ke 0.0 0.0 0.0 
+map_Ka GasClyinderTexture-01.jpeg
+map_Kd GasClyinderTexture-01.jpeg
+
+newmtl cap-9415921
+Ns 20.0
+d 1.0
+Tr 0.0
+illum 2
+Ka 0.43919998 0.3254 0.058799997 
+Kd 0.43919998 0.3254 0.058799997 
+Ks 0.50189996 0.50189996 0.50189996 
+Ke 0.0 0.0 0.0 
+
