@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>WebXR AR Tap to Place</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5.xr@0.5.3/dist/p5xr.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="ui">
+    <button onclick="startAR()">Start AR</button>
+
+    <button onclick="selectModel('cube')">Cube</button>
+    <button onclick="selectModel('chair')">Chair</button>
+    <button onclick="selectModel('cylinder')">Cylinder</button>
+    <button onclick="selectModel('pot')">Pot</button>
+
+    <button onclick="rotateLastObject()">Rotate</button>
+    <button onclick="undoLastObject()">Undo</button>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
