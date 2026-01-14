@@ -33,46 +33,41 @@ function setup() {
 // ============================
 // START AR (USER GESTURE)
 // ============================
-function startAR() {
+async function startAR() {
   if (arStarted) return;
-  
-  tapSound.playMode("restart");
-  tapSound.setVolume(0.3);
 
-  userStartAudio(); // WAJIB di mobile
-  xr.start();
-  arStarted = true;
+  userStartAudio();
+
+  try {
+    await xr.start();
+    arStarted = true;
+    console.log("XR STARTED");
+  } catch (e) {
+    alert("Device / browser tidak mendukung WebXR AR");
+    console.error(e);
+  }
 }
 
 // ============================
 // DRAW
 // ============================
 function draw() {
-  background(0, 0);
-
+  clear();
   if (!arStarted) return;
 
-  xr.update();
-  
-  // LIGHTING
   ambientLight(60);
-  directionalLight(255, 255, 255, -0.5, -1, -0.5);
-  pointLight(255, 255, 255, 0, -1, 0);
 
-  // Reticle
   if (reticle.visible) {
     push();
-    translate(
-      reticle.position.x,
-      reticle.position.y,
-      reticle.position.z
-    );
+    translate(reticle.position.x, reticle.position.y, reticle.position.z);
     rotateX(-HALF_PI);
     noFill();
-    stroke(0, 255, 0);
-    circle(0, 0, 0.15);
+    stroke(0,255,0);
+    circle(0,0,0.15);
     pop();
   }
+}
+
 
   for (let obj of placedObjects) {
     obj.update();
@@ -182,3 +177,4 @@ class ARObject {
   pop();
 }
 }
+
