@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#ui {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+#ui button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 14px;
+}
+
+#ui button:active {
+  background: rgba(0, 150, 255, 0.8);
+}
