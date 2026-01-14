@@ -11,11 +11,11 @@ let tapSound;
 // PRELOAD
 // ============================
 function preload() {
-  cubeModel = loadModel("assets/cube.obj", true);
-  chairModel = loadModel("assets/chair.obj", true);
-  cylinderModel = loadModel("assets/cylinder.obj", true);
-  potModel = loadModel("assets/pot.obj", true);
-  tapSound = loadSound("assets/tap.mp3", true);
+  cubeModel = loadModel("assets/cube.obj");
+  chairModel = loadModel("assets/chair.obj");
+  cylinderModel = loadModel("assets/cylinder.obj");
+  potModel = loadModel("assets/pot.obj");
+  tapSound = loadSound("assets/tap.mp3");
 }
 
 // ============================
@@ -182,4 +182,3 @@ class ARObject {
   pop();
 }
 }
-
